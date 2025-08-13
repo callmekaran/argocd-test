@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  namespace: default   # <- add this
   labels:
     app: nginx
 spec:
@@ -36,6 +37,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: apache
+  namespace: default   # <- add this
   labels:
     app: apache
 spec:
